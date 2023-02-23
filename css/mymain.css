@@ -1,0 +1,512 @@
+@font-face {
+    font-family: logofont;
+    src: url(../font/Yellow\ Ginger.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+:root {
+    scroll-behavior: smooth;
+    --color-dark: rgb(179, 31, 21);
+    --menu-hover-color: rgb(255, 166, 0);
+    --buttoncolor-navbar-outline: rgb(179, 31, 21);
+    --buttoncolor-navbar-hover: rgb(255, 166, 0);
+    --h2-color-secondry:rgb(179, 31, 21);
+    --h2-color-primary:white;
+}
+/* -------------------
+on scroll progress bar
+-------------------- */
+
+ 
+/* -------------------
+scrollbar css 
+-------------------- */
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 166, 0);
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+::selection {
+    background-color: rgb(255, 166, 0);
+    color: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-dark);
+}
+
+/* -------------------
+scrollbar css 
+-------------------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bg-resturant {
+    background-color: rgb(110, 37, 0);
+}
+
+.bg-color {
+    background-color: var(--color-dark);
+}
+
+/* .body{
+    font-family: logofont;
+} */
+
+/* ---------------------------
+nav-brand and nav-link 
+-------------------------- */
+.navbar-brand {
+    font-family: logofont;
+    font-size: 100%;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.dropdown,
+.dropdown-center,
+.dropend,
+.dropstart,
+.dropup,
+.dropup-center {
+   color: white;
+}
+
+.dropdown,
+.dropdown-center,
+.dropend,
+.dropstart,
+.dropup,
+.dropup-center:hover {
+   color: var(--menu-hover-color);
+}
+
+
+/* .callnow{
+    color: white;
+    text-decoration: none;
+} */
+/* .btn-main {
+    border: var(--buttoncolor-navbar-outline) 2px solid;
+    color: white;
+}
+
+.btn-main:hover {
+    background-color: var(--buttoncolor-navbar-hover) !important;
+    color: black;
+} */
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--menu-hover-color);
+}
+
+.navbar-dark {
+    /* color: rgb(236, 236, 236); */
+    color: rgb(110, 37, 0);
+}
+
+.navbar-brand img {
+    width: 15%;
+}
+
+/* ---------------------------
+nav-brand and nav-link 
+-------------------------- */
+
+/* -----------------
+menu font
+---------------- */
+.menu-font {
+    font-style: bold;
+}
+
+/* -----------------
+menu font
+---------------- */
+
+/* ------------------------
+section and nth child
+------------------------ */
+#one .one {
+    /* background-color: crimson; */
+    /* background-color: rgb(110, 37, 0); */
+    background-color: rgb(179, 31, 21);
+}
+
+#two .one {
+    /* background-color: crimson; */
+    background-color: rgb(255, 162, 116);
+}
+.heading2-color{
+    color: var(--h2-color-secondry);
+}
+.cream-color-heading {
+    color: rgb(110, 37, 0) !important;
+}
+
+.section-top-padding {
+    margin-top: 20px;
+}
+.heading-top-padding{
+    margin-top:6rem;
+}
+
+/* --------------
+section item
+-------------- */
+section {
+    text-align: center;
+    font-size: 30px;
+    /* height: 700px; */
+}
+
+/* --------------
+section item
+-------------- */
+/* --------------------
+dropdown menu
+--------------------- */
+.dropdown-menu {
+    top: 100%;
+    left: 0;
+    margin-top: var(--bs-dropdown-spacer);
+    background: var(--color-dark);
+    color: white;
+    /* color: white; */
+}
+
+.dropdown-menu:hover {
+    top: 100%;
+    left: 0;
+    margin-top: var(--bs-dropdown-spacer);
+    background: var(--color-dark) !important;
+    color: var(--menu-hover-color) !important;
+    /* color: white; */
+}
+
+.dropdown-toggle {
+    color: white;
+}
+
+.dropdown-item {
+    color: rgb(255, 255, 255);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: black;
+    text-decoration: none;
+    background-color:white;
+}
+
+.dropdown-divider {
+    background-color: white;
+}
+
+.dropdown-item a:hover,
+.dropdown-item a:active,
+.dropdown-item:focus {
+    background: rgb(226, 226, 226) !important;
+    color: rgb(255, 255, 255);
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: rgb(22, 22, 22) !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: #ffffff;
+}
+
+/* --------------------
+dropdown menu
+--------------------- */
+
+
+/* ---------------
+footer section 
+--------------- */
+#footer section {
+    font-size: 20px;
+}
+
+/* ---------------
+footer section 
+--------------- */
+
+
+/* --------------
+button 
+-------------- */
+/* .btn {
+    background-color: rgb(110, 37, 0);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(38, 12, 0);
+    color: white;
+} */
+
+/* .btn-call-now{
+    background-color: rgb(110, 37, 0) !important;
+    color: white !important;
+} */
+/* --------------
+button 
+-------------- */
+
+
+/* section:nth-child(odd) {
+    background-color: crimson;
+}
+
+
+section:nth-child(even) {
+    background-color: rgb(74, 58, 199);
+} */
+
+#one .card .card-body p {
+    font-size: 60%;
+}
+
+#two .card .card-body p {
+    font-size: 60%;
+}
+
+/* ------------------
+carousel control
+------------------ */
+
+.carousel-control-prev-icon {
+    background-image: url(../img/arrowleft.png) !important;
+    position: relative;
+
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/arrowright.png) !important;
+
+}
+
+/* .carousel-caption{
+    position: relative;
+    top: -390px;
+    left: 0%;
+    width: 50%;
+    transform: scale(1.5);
+}
+.carousel-indicators{
+        position: relative;
+        top: 605px;
+        left: 10%;
+        width: 50%;
+} */
+
+.marging-top-slider{
+    margin-top: 50px;
+}
+
+/* ------------------
+carousel-indicator
+------------------ */
+
+.carousel-indicators button {
+
+    background-color: #fffb02 !important;
+
+}
+
+/* -----------------------------
+for mobile view
+--------------------------- */
+/* @media screen and (max-width:991px) {
+    .navbar-brand{
+        display: none;
+    }
+    .navbar-toggler{
+        display: none;
+    }
+    .navbar-nav{
+        padding-top: 0px;
+    }
+} */
+
+/* ---------------------------
+for bigg screen
+----------------------- */
+/* @media screen and (min-width:992px) {
+    .navbar-brand{
+        display: block;
+    }
+} */
+
+/* ---------------------------
+footer social icon 
+-------------------------- */
+
+#social a {
+    text-decoration: none;
+}
+
+/* --------------------
+product footer 
+---------------------- */
+#product-footer p a {
+    text-decoration: none;
+}
+
+#footer-links p a {
+    text-decoration: none;
+}
+
+/* -------------------------------
+bottom border
+------------------------- */
+
+.bottom-border-primary{
+    border-bottom: 5px solid var(--h2-color-primary);
+}
+
+.bottom-border-secondry{
+    border-bottom: 5px solid var(--h2-color-secondry);
+}
+
+/* -----------------------------
+hero text 
+-------------------- */
+/* .hero-text{
+    position: relative;
+    top: -292px;
+    left: 113px;
+    color: white;
+} */
+
+/* -------------------------------
+section 3
+---------------------------- */
+
+#back-image{
+    background-image: url(../img/section3-back2.jpg);
+    width: 100%;
+}
+
+/* ---------------------------------
+social media footer 
+--------------------------------- */
+#social a{
+    color: rgb(117, 0, 0);
+    transition: 0.5s ease-in-out;
+}
+#social a:hover{
+    color: rgb(13, 13, 13);
+    transform: scale(1.5);
+}
+/* 
+----------------------------------
+number counter css
+-------------------------------- */
+/* header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0px;
+  }
+  
+  h1, h3  {
+    text-transform: uppercase;
+   }
+  
+  .counter
+  {
+      text-align: center;
+  }
+  
+  .counter-count
+  {
+      font-size: 50px;
+      font-weight: bold;
+      position: relative;
+      color: #000000;
+      text-align: center;
+      display: inline-block;
+  } */
+
+  /* ----------------------------------
+number counter css
+-------------------------------- */
+
+/* .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+header {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 60px;
+}
+
+.counters {
+    background-color: #0f479a;
+    color: white;
+    padding: 40px 20px;
+    border-top: 3px solid lightskyblue;
+}
+
+.counters .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+
+.counters i {
+    color: lightskyblue;
+    margin-bottom: 5px;
+}
+
+.counters .counter {
+    font-size: 45px;
+    margin: 10px 0;
+} */

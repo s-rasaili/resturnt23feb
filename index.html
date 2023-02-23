@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap 5 -->
+
+    <!-- tailwind css -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+
+    <!-- dataaos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- fontawesome -->
+
+    <!-- hover.css -->
+    <link rel="stylesheet" href="css/hover.css">
+
+    <!-- mycss starts -->
+    <link rel="stylesheet" href="css/mymain.css">
+    <!-- mycss ends -->
+
+    <!-- mediaquery starts -->
+    <link rel="stylesheet" href="css/mymedia.css">
+    <!-- media query ends -->
+
+    <title>Resturant Company</title>
+
+</head>
+
+<body>
+
+    <!-- navbar starts -->
+    <nav class="navbar shadow fixed-top navbar-expand-lg bg-color navbar-dark">
+        <!-- nav container -->
+        <div class="container-fluid">
+
+            <a id="first-logo" class="navbar-brand d-lg-block d-md-none d-none w-10" href="index.html"><img
+                    src="img/horizontal-logo.png" class="navbar-brand-size" alt=""></a>
+            <a id="second-logo" class="navbar-brand d-lg-none d-md-block d-sm-block" href="index.html">
+                <img src="img/vertical-logo.png" alt="Avatar Logo" class="rounded-pill">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-0 mb-lg-0 gap-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase menu-font" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#one">AboutUs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-transperent text-center dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">PRODUCTS</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-uppercase" href="#">PRODUCT A</a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">PRODUCT B</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-uppercase" href="#">PRODUCT C</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn btn-outline-warning text-uppercase" href="#" role="button">Callnow</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- nav container -->
+    </nav>
+    
+    <!-- navbar ends -->
+
+
+    <!-- slider starts -->
+
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade marging-top-slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active d-flex" data-bs-interval="2500">
+                <div>
+                    <img src="img/slide2.jpg" class="d-block w-100" alt="slide1">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                        <h1 class="fw-bold">First slide label</h1>
+                        <p class="text-light">Some representative placeholder content for the first slide.</p>
+                        <button class="btn btn-warning">Click Here</button>
+                        <button class="btn btn-outline-warning">Learn More</button>
+                    </div> -->
+                </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="img/slide3.jpg" class="d-block w-100" alt="slide2">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="img/slide4.jpg" class="d-block w-100" alt="slide3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- slider ends -->
+
+    <!-- section 1 -->
+    <section id="one" class="one h-auto mt-0">
+        <div class="container-fluid one gap-auto -3 p-4">
+            <div class="text-center section-top-padding mt-5">
+                <h2 class="pb-2 text-center text-uppercase text-white"><span class="bottom-border-primary">About
+                        Us</span></h2>
+                <!-- <img src="img/endlinered.png" class="img-fluid w-25" alt=""> -->
+            </div>
+            <div class="row gx-4 d-flex justify-content-between align-items-center mt-4 p-5 non-animation-mobile"
+                data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card shadow w-auto mb-4">
+                        <img src="img/burger-thumb.jpg" class="card-img-top" alt="image1">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the</p>
+                            <a href="#" class="btn btn-outline-danger">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card shadow w-auto mb-4">
+                        <img src="img/bowl-cake.jpg" class="card-img-top" alt="image2">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the</p>
+                            <a href="#" class="btn btn-outline-danger">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card shadow w-auto mb-4">
+                        <img src="img/bowl-cake.jpg" class="card-img-top" alt="image3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the</p>
+                            <a href="#" class="btn btn-outline-danger">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card shadow w-auto mb-4">
+                        <img src="img/bowl-cake.jpg" class="card-img-top" alt="image4">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the</p>
+                            <a href="#" class="btn btn-outline-danger">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 1 -->
+
+    <!-- section 2 -->
+    <section id="two" class="one h-auto">
+        <div class="container-fluid p-4 one">
+            <div class="text-center section-top-padding mt-5">
+                <h2 class="pb-2 text-center text-uppercase text-white cream-color-heading"><span
+                        class="bottom-border-secondry heading2-color">Our Products</span></h2>
+                <!-- <img src="img/endlinered.png" class="img-fluid w-25" alt=""> -->
+            </div>
+            <div class="row gx-4 d-flex justify-content-between align-items-center mt-4 p-5 non-animation-mobile"
+                data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow w-auto">
+                        <img src="img/burger-thumb.jpg" class="card-img-top" alt="image1">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of</p>
+                            <a href="#" class="btn btn-outline-danger">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow w-auto">
+                        <img src="img/bowl-cake.jpg" class="card-img-top" alt="image2">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of</p>
+                            <a href="#" class="btn btn-outline-danger">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow w-auto">
+                        <img src="img/bowl-cake.jpg" class="card-img-top" alt="image3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of</p>
+                            <a href="#" class="btn btn-outline-danger">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow w-auto">
+                        <img src="img/bowl-cake.jpg" class="card-img-top" alt="image4">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of</p>
+                            <a href="#" class="btn btn-outline-danger">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 2 -->
+
+    <!-- section 3 -->
+    <section id="back-image" class="h-auto">
+        <div class="container">
+
+            <div class="text-center p-5">
+                <h2 class="pb-2 text-center text-uppercase text-white "><span
+                        class="bottom-border-primary heading-top-padding mb-5">About Us</span></h2>
+                <!-- <img src="img/endlinered.png" class="img-fluid w-25" alt=""> -->
+            </div>
+
+            <div class="row d-flex justify-content-center align-items-center pt-0 pb-4 p-0">
+                <div class="col-md-6 order-1 col-sm-12" data-aos="flip-left">
+                    <h2 class="text-white fw-bold">Call Now</h2>
+                    <p class="text-light fs-5">Lorem ipsum dolor sit amet consectetur adipisicin sit amet
+                        consectetur adipisicinsit amet consectetur adipisicin consectetur adipisicinsit amet consectetur
+                        adipisicin</p>
+                    <button class="btn btn-outline-warning">Learn More</button>
+                </div>
+                <div class="col-md-6 order-2 col-sm-12" data-aos="flip-right">
+                    <img src="img/mobile_tablet.png" class="img-fluid w-100" alt="mobile_tablet">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- section 3 -->
+
+    <!-- counter section -->
+
+    <section>
+        
+    </section>
+
+    <!-- =====================================================
+counter number js
+====================================================== -->
+    <!-- <script src="js/functions.js"></script> -->
+
+
+    <!-- footer started -->
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+
+    <!-- Footer -->
+    <footer id="footer" class="text-center text-lg-start text-white" style="background-color: #780c0c;">
+        <!-- Section: Social media -->
+        <section class="p-4 shadow" style="background-color: rgb(255, 166, 0);">
+            <!-- Left -->
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class=" col-md-6">
+                        <span class="fw-bold" style="color: #780c0c;">Follow us on social Media:</span>
+                    </div>
+                    <!-- Left -->
+
+                    <!-- Right -->
+                    <div id="social" class="col-md-6">
+                        <a href="index.html" class=" me-4">
+                            <i class="fab fa-facebook-f hvr-float"></i>
+                        </a>
+                        <a href="index.html" class=" me-4">
+                            <i class="fab fa-twitter hvr-float"></i>
+                        </a>
+                        <!-- <a href="" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a> -->
+                        <a href="index.html" class=" me-4">
+                            <i class="fab fa-instagram hvr-float"></i>
+                        </a>
+                        <!-- <a href="" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a> -->
+                        <!-- <a href="" class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section id="footer-section" class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-2">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <!-- <h6 class="text-uppercase fw-bold">Company name</h6> -->
+                        <img src="img/horizontal-logo.png" class="img-fluid" alt="logo">
+                        <!-- <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 0px; height: 1px" /> -->
+                        <p class="mt-3">
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div id="product-footer" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Products</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-white">Product A</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Product B</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Product C</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Product D</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div id="footer-links" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-white">Your Account</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Career</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; height: 2px" />
+                        <p><i class="fas fa-home mr-3"></i> Bhopal, M.P.</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 91 444 444 33</p>
+                        <p><i class="fas fa-print mr-3"></i> + 91 333 222 11</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #780c0c;">
+            © 2020 Copyright:
+            <a class="text-white" href="index.html" style="text-decoration: none;">Hot & Grill</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- End of .container -->
+
+    <!-- footer end -->
+
+
+
+</body>
+
+<!-- =====================================================
+number counter animation
+====================================================== -->
+<!-- <script>
+    $('.counter-count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+          
+          //chnage count up speed here
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+</script> -->
+
+<!-- =====================================================
+data aos initialization
+====================================================== -->
+<script>
+    AOS.init();
+</script>
+
+<!-- <script>AOS.init({disable: 'mobile'});</script> -->
+
+
+<!-- =====================================================
+Bootstrap navbar menu collapse after clicking
+====================================================== -->
+<script>
+    $(".navbar-collapse a").click(function () {
+        $(".navbar-collapse").collapse("hide");
+    });
+</script>
+
+<!-- <script>
+    $("#mynavbar a").click(function () {
+      $("#mynavbar").collapse("hide");
+    });
+    </script> -->
+
+<script>
+    $("#navbar-droupdown a").click(function () {
+        $("#navbar-droupdown").collapse("hide");
+    });
+</script>
+
+
+<!-- =====================================================
+disable inspect element
+====================================================== -->
+<script>
+// Disable right-click inspect element
+// Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+
+// document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+// function ctrlShiftKey(e, keyCode) {
+//   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+// }
+
+// document.onkeydown = (e) => {
+  
+//   if (
+//     event.keyCode === 123 ||
+//     ctrlShiftKey(e, 'I') ||
+//     ctrlShiftKey(e, 'J') ||
+//     ctrlShiftKey(e, 'C') ||
+//     (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+//   )
+//     return false;
+// };
+</script>
+
+</html>
